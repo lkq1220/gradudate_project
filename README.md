@@ -3,4 +3,5 @@
 #### NB_GPS for STM32
 #### ZStack-CC2530-2.3.0-1.4.0 for zigbee
 #### TensorFlow for data training
+#### slim for wetland image recognition
 my graduate work source code
