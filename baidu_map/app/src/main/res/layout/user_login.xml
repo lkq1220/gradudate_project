@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/login_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_input"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/userId_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <!-- android:ems="10"表示EditText内最多只显示10个字符，超出不显示 -->
+                <!-- android:singleLine="true"表示不能全部显示时，后面用“…”来表示 -->
+                <EditText
+                    android:id="@+id/editnumber"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="#999999"
+                    android:textSize="18sp" >
+
+                    <requestFocus />
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!-- 横线  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CACDD1" />
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button"
+            android:text="立即登录"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/RegButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button"
+            android:text="立即注册"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

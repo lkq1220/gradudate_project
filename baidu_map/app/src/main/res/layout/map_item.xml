@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/add_records_1_map"
+            >
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:id="@+id/my_postion"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/search_info"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:background="#00000000"
+            android:src="@drawable/add_records_map"/>
+    </LinearLayout>
+</LinearLayout>
